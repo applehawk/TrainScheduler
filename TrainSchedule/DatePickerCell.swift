@@ -9,11 +9,11 @@
 import UIKit
 
 protocol ChooseExtendedCell {
-    var extendedHeight : CGFloat { get }
-    var defaultHeight : CGFloat { get }
+    static var extendedHeight : CGFloat { get }
+    static var defaultHeight : CGFloat { get }
 }
 
-class DatePickerCell: UITableViewCell {
+class DatePickerCell: UITableViewCell, ChooseExtendedCell {
     static let cellId = "datePickerCellId"
     static let headerTitle = "Выбор даты"
     static let rowsInSection = 1
@@ -57,46 +57,4 @@ class DatePickerCell: UITableViewCell {
             checkHeight()
         }
     }*/
-}
-
-enum DatePickerRows : Int, Row {
-    case DatePickerPlace = 0
-    static let allValues = [DatePickerPlace]
-    
-    func title() -> String {
-        return NSLocalizedString("DATEPICKER_SECTION_ROW", comment: "Departure place label")
-        
-    }
-    
-    func rowsCount() -> Int {
-        return 1
-    }
-    
-    func configureDateCell(cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let sectionCase = Section.allValues[indexPath.section]
-        if let dateCell = cell as? DatePickerCell,
-            let rowCase = sectionCase.caseForRow(indexPath.row) {
-                dateCell.dateLabel.text = title()
-        }
-        return cell
-    }
-    
-    func configurationFunctionAndIdentifier(owner: ScheduleController) -> (((UITableViewCell, NSIndexPath) -> UITableViewCell), String)
-    {
-        switch self {
-        case .DatePickerPlace: return (configureDateCell, DatePickerCell.cellId)
-        }
-    }
-    func rowHeight() -> CGFloat
-    {
-        return CGFloat(kTableCellHeightRegular)
-    }
-    func currentValue(owner: ScheduleController) -> Any?
-    {
-        return nil
-    }
-    func assignValue(owner: ScheduleController, value: Any?)
-    {
-        
-    }
 }

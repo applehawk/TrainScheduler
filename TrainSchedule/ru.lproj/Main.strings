@@ -1,0 +1,18 @@
+
+/* Class = "UILabel"; text = "Way"; ObjectID = "Weq-BR-NkB"; */
+"Weq-BR-NkB.text" = "Way";
+
+/* Class = "UIViewController"; title = "AboutAppController"; ObjectID = "Yth-iy-89C"; */
+"Yth-iy-89C.title" = "AboutAppController";
+
+/* Class = "UILabel"; text = "Date"; ObjectID = "aEh-vv-jbQ"; */
+"aEh-vv-jbQ.text" = "Date";
+
+/* Class = "UITabBarItem"; title = "Расписание"; ObjectID = "fWz-Mw-5bP"; */
+"fWz-Mw-5bP.title" = "Расписание";
+
+/* Class = "UIViewController"; title = "ScheduleController"; ObjectID = "jFU-Zk-JGa"; */
+"jFU-Zk-JGa.title" = "ScheduleController";
+
+/* Class = "UITabBarItem"; title = "О приложении"; ObjectID = "lWv-3a-Lo3"; */
+"lWv-3a-Lo3.title" = "О приложении";

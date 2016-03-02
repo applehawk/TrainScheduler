@@ -8,6 +8,25 @@
 
 import UIKit
 
+extension ScheduleController {
+    func configureDateCell(cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let sectionCase = Section.allValues[indexPath.section]
+        if let dateCell = cell as? DatePickerCell,
+            let rowCase = sectionCase.caseForRow(indexPath.row) {
+                dateCell.dateLabel.text = rowCase.title()
+        }
+        return cell
+    }
+    
+    func configureVariantsCell(cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let sectionCase = Section.allValues[indexPath.section]
+        if let variantsCell = cell as? VariantsCell, let rowCase = sectionCase.caseForRow(indexPath.row) {
+                
+        }
+        return cell
+    }
+}
+
 class ScheduleController : UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
@@ -34,7 +53,7 @@ class ScheduleController : UIViewController, UITableViewDataSource, UITableViewD
         let cell = tableView.dequeueReusableCellWithIdentifier(cellIdentifier, forIndexPath: indexPath)
         return configurationFunction(cell, indexPath)
     }
-    
+    /*
     func assignValueForRowAtIndexPath(someIndexPath: NSIndexPath?, value: Any?) {
         if let indexPath = someIndexPath,
             let sectionCase = Section(rawValue: indexPath.section),
@@ -43,22 +62,20 @@ class ScheduleController : UIViewController, UITableViewDataSource, UITableViewD
                 tableView.reloadRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.None)
         }
     }
-    
+    */
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return Section.allValues.count
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let sectionCase = Section.allValues[section]
-        if let row = sectionCase.toRow() {
-            return row.rowsCount()
-        }
-        return 0
+        let sectionCase = Section.allValues[section] //determine type of section
+        
+        return sectionCase.rowsCount()
     }
     
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         let sectionCase = Section.allValues[indexPath.section]
-        if let row = sectionCase.toRow() {
+        if let row = sectionCase.caseForRow(indexPath.row) {
             return row.rowHeight()
         }
         return 0.0 as CGFloat
@@ -73,14 +90,6 @@ class ScheduleController : UIViewController, UITableViewDataSource, UITableViewD
         return nil
     }
     
-    func configureVariantsCell(cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let sectionCase = Section.allValues[indexPath.section]
-        if let variantsCell = cell as? VariantsCell,
-            let rowCase = sectionCase.caseForRow(indexPath.row) {
-                
-        }
-        return cell
-    }
     
     func tableView(tableView: UITableView, didEndDisplayingCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
         
