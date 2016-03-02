@@ -1,6 +1,5 @@
-
 /* Class = "UILabel"; text = "Way"; ObjectID = "Weq-BR-NkB"; */
-"Weq-BR-NkB.text" = "Way";
+"Weq-BR-NkB.text" = "Путь";
 
 /* Class = "UIViewController"; title = "AboutAppController"; ObjectID = "Yth-iy-89C"; */
 "Yth-iy-89C.title" = "AboutAppController";
@@ -16,3 +15,4 @@
 
 /* Class = "UITabBarItem"; title = "О приложении"; ObjectID = "lWv-3a-Lo3"; */
 "lWv-3a-Lo3.title" = "О приложении";
+

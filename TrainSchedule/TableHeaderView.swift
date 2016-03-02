@@ -9,5 +9,7 @@
 import UIKit
 
 class TableHeaderView: UITableViewHeaderFooterView {
+    
+    static let cellId = "TableHeaderViewCellId"
     @IBOutlet weak var titleLabel: UILabel!
 }

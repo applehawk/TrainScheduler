@@ -48,32 +48,22 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="83.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Way" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Weq-BR-NkB">
-                                                    <rect key="frame" x="8" y="13" width="60" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="60" id="L2U-cJ-dxe"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QSq-UY-EDz">
-                                                    <rect key="frame" x="76" y="8" width="516" height="30"/>
+                                                    <rect key="frame" x="8" y="8" width="584" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <action selector="valueChangedWayField:" destination="jFU-Zk-JGa" eventType="valueChanged" id="yGu-bu-PYr"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailingMargin" secondItem="QSq-UY-EDz" secondAttribute="trailing" id="2IB-jt-wDR"/>
-                                                <constraint firstItem="Weq-BR-NkB" firstAttribute="leading" secondItem="gwv-Bb-QYv" secondAttribute="leading" constant="8" id="8nt-EM-jl1"/>
-                                                <constraint firstItem="Weq-BR-NkB" firstAttribute="centerY" secondItem="QSq-UY-EDz" secondAttribute="centerY" id="Gh0-X4-G2T"/>
-                                                <constraint firstItem="QSq-UY-EDz" firstAttribute="leading" secondItem="Weq-BR-NkB" secondAttribute="trailing" constant="8" id="LQ9-8b-SEr"/>
+                                                <constraint firstItem="QSq-UY-EDz" firstAttribute="leading" secondItem="gwv-Bb-QYv" secondAttribute="leadingMargin" id="KQj-L5-le0"/>
                                                 <constraint firstItem="QSq-UY-EDz" firstAttribute="top" secondItem="gwv-Bb-QYv" secondAttribute="top" constant="8" id="e3m-aC-tcz"/>
+                                                <constraint firstItem="QSq-UY-EDz" firstAttribute="trailing" secondItem="gwv-Bb-QYv" secondAttribute="trailingMargin" id="ijp-fN-hFF"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="wayLabel" destination="Weq-BR-NkB" id="TKt-7i-CBJ"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="datePickerCellId" rowHeight="329" id="4pG-Dg-ooz" customClass="DatePickerCell" customModule="TrainSchedule" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="133.5" width="600" height="329"/>
@@ -137,6 +127,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Расписание" image="Train-50" id="fWz-Mw-5bP"/>
                     <connections>
+                        <outlet property="departureField" destination="QSq-UY-EDz" id="iky-Sn-My8"/>
                         <outlet property="tableView" destination="OIG-E0-mQy" id="Lcx-KN-aSu"/>
                     </connections>
                 </viewController>

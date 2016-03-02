@@ -30,11 +30,17 @@ extension ScheduleController {
 class ScheduleController : UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var wayField: UITextField!
     
     var selectedIndexPath : NSIndexPath?
     
+    var selectedRow : Row?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.registerNib(UINib(nibName: "TableHeaderView", bundle: nil), forHeaderFooterViewReuseIdentifier: TableHeaderView.cellId)
+        
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -63,6 +69,11 @@ class ScheduleController : UIViewController, UITableViewDataSource, UITableViewD
         }
     }
     */
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    }
+    
+
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return Section.allValues.count
     }
@@ -73,8 +84,16 @@ class ScheduleController : UIViewController, UITableViewDataSource, UITableViewD
         return sectionCase.rowsCount()
     }
     
+    func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return CGFloat.min
+    }
+    
+    func tableView(tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        return UIView(frame: CGRect.zero)
+    }
+    
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        let sectionCase = Section.allValues[indexPath.section]
+    let sectionCase = Section.allValues[indexPath.section]
         if let row = sectionCase.caseForRow(indexPath.row) {
             return row.rowHeight()
         }
@@ -89,18 +108,17 @@ class ScheduleController : UIViewController, UITableViewDataSource, UITableViewD
         }
         return nil
     }
-    
-    
-    func tableView(tableView: UITableView, didEndDisplayingCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
-        
+    func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let sectionCase = Section.allValues[section]
+        return sectionCase.headerView(tableView)
     }
     
     func tableView(headerView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        let sectionCase = Section.allValues[section]
-        if sectionCase.title() != nil {
-            return sectionCase.headerHeight()
+        if section == 1 {
+            return 44.0
         }
-        return kTableCellHeightRegular as! CGFloat
+        let sectionCase = Section.allValues[section]
+        return sectionCase.headerHeight()
     }
     
 

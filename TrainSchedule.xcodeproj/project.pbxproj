@@ -10,12 +10,15 @@
 		7E254A761C81078F00FFEFE0 /* DirectionWaysCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E254A751C81078F00FFEFE0 /* DirectionWaysCell.swift */; };
 		7E254A781C83AA7100FFEFE0 /* VariantsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E254A771C83AA7100FFEFE0 /* VariantsCell.swift */; };
 		7E254A891C86EA1900FFEFE0 /* TableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E254A881C86EA1900FFEFE0 /* TableHeaderView.swift */; };
-		7E254A8F1C86EA2C00FFEFE0 /* ScheduleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E254A8D1C86EA2C00FFEFE0 /* ScheduleModel.swift */; };
+		7E254A8F1C86EA2C00FFEFE0 /* ScheduleTableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E254A8D1C86EA2C00FFEFE0 /* ScheduleTableModel.swift */; };
 		7E254A991C8705BB00FFEFE0 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 7E254A981C8705BB00FFEFE0 /* Podfile */; };
 		7E254A9B1C870C5A00FFEFE0 /* TableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E254A9A1C870C5A00FFEFE0 /* TableHeaderView.xib */; };
 		7E254AA01C870C6400FFEFE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E254A9C1C870C6400FFEFE0 /* LaunchScreen.storyboard */; };
 		7E254AA11C870C6400FFEFE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E254A9E1C870C6400FFEFE0 /* Main.storyboard */; };
 		7E254AA81C870DD700FFEFE0 /* en.xliff in Resources */ = {isa = PBXBuildFile; fileRef = 7E254AA71C870DD700FFEFE0 /* en.xliff */; };
+		7E254AAB1C870F7300FFEFE0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E254AAD1C870F7300FFEFE0 /* InfoPlist.strings */; };
+		7E254AB01C870F7400FFEFE0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E254AB21C870F7400FFEFE0 /* Localizable.strings */; };
+		7E254AB81C87102D00FFEFE0 /* ru.xliff in Resources */ = {isa = PBXBuildFile; fileRef = 7E254AB71C87102D00FFEFE0 /* ru.xliff */; };
 		7ED173C81C6A1E260057A5D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED173C71C6A1E260057A5D9 /* AppDelegate.swift */; };
 		7ED173CA1C6A1E260057A5D9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED173C91C6A1E260057A5D9 /* MainViewController.swift */; };
 		7EF4AACB1C7B139000AF4F6C /* allStations.json in Resources */ = {isa = PBXBuildFile; fileRef = 7EF4AACA1C7B139000AF4F6C /* allStations.json */; };
@@ -30,16 +33,21 @@
 		7E254A751C81078F00FFEFE0 /* DirectionWaysCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionWaysCell.swift; sourceTree = "<group>"; };
 		7E254A771C83AA7100FFEFE0 /* VariantsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VariantsCell.swift; sourceTree = "<group>"; };
 		7E254A881C86EA1900FFEFE0 /* TableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableHeaderView.swift; path = TrainSchedule/TableHeaderView.swift; sourceTree = "<group>"; };
-		7E254A8D1C86EA2C00FFEFE0 /* ScheduleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleModel.swift; sourceTree = "<group>"; };
+		7E254A8D1C86EA2C00FFEFE0 /* ScheduleTableModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleTableModel.swift; sourceTree = "<group>"; };
 		7E254A981C8705BB00FFEFE0 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		7E254A9A1C870C5A00FFEFE0 /* TableHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableHeaderView.xib; sourceTree = "<group>"; };
 		7E254A9D1C870C6400FFEFE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = TrainSchedule/Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E254A9F1C870C6400FFEFE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = TrainSchedule/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7E254AA21C870CBD00FFEFE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = TrainSchedule/en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		7E254AA31C870CBD00FFEFE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = TrainSchedule/en.lproj/Main.strings; sourceTree = "<group>"; };
-		7E254AA41C870CC400FFEFE0 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = TrainSchedule/ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		7E254AA51C870CC400FFEFE0 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = TrainSchedule/ru.lproj/Main.strings; sourceTree = "<group>"; };
 		7E254AA71C870DD700FFEFE0 /* en.xliff */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = en.xliff; path = TrainSchedule/Translations/en.xliff; sourceTree = "<group>"; };
+		7E254AAC1C870F7300FFEFE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7E254AB11C870F7400FFEFE0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7E254AB31C870FE200FFEFE0 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = TrainSchedule/ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		7E254AB41C870FE200FFEFE0 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = TrainSchedule/ru.lproj/Main.strings; sourceTree = "<group>"; };
+		7E254AB51C870FE200FFEFE0 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7E254AB61C870FE200FFEFE0 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7E254AB71C87102D00FFEFE0 /* ru.xliff */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = ru.xliff; path = TrainSchedule/Translations/ru.xliff; sourceTree = "<group>"; };
 		7ED173C41C6A1E260057A5D9 /* TrainSchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrainSchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ED173C71C6A1E260057A5D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7ED173C91C6A1E260057A5D9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +74,7 @@
 		7E254A7D1C86265C00FFEFE0 /* CustomHeaderView */ = {
 			isa = PBXGroup;
 			children = (
+				7E254A9A1C870C5A00FFEFE0 /* TableHeaderView.xib */,
 				7E254A881C86EA1900FFEFE0 /* TableHeaderView.swift */,
 			);
 			name = CustomHeaderView;
@@ -95,6 +104,7 @@
 		7E254AA61C870DCD00FFEFE0 /* Translations */ = {
 			isa = PBXGroup;
 			children = (
+				7E254AB71C87102D00FFEFE0 /* ru.xliff */,
 				7E254AA71C870DD700FFEFE0 /* en.xliff */,
 			);
 			name = Translations;
@@ -106,7 +116,6 @@
 				7E254AA61C870DCD00FFEFE0 /* Translations */,
 				7E254A9C1C870C6400FFEFE0 /* LaunchScreen.storyboard */,
 				7E254A9E1C870C6400FFEFE0 /* Main.storyboard */,
-				7E254A9A1C870C5A00FFEFE0 /* TableHeaderView.xib */,
 				7E254A981C8705BB00FFEFE0 /* Podfile */,
 				7EF4AACE1C7B142300AF4F6C /* README.md */,
 				7ED173C61C6A1E260057A5D9 /* TrainSchedule */,
@@ -127,7 +136,7 @@
 			children = (
 				7E254A921C86EA6500FFEFE0 /* Controllers */,
 				7E254A911C86EA5C00FFEFE0 /* Cells */,
-				7E254A8D1C86EA2C00FFEFE0 /* ScheduleModel.swift */,
+				7E254A8D1C86EA2C00FFEFE0 /* ScheduleTableModel.swift */,
 				7EF4AAC91C7B135F00AF4F6C /* Resources */,
 				7EF4AAC81C7B134700AF4F6C /* UI */,
 				7E254A7D1C86265C00FFEFE0 /* CustomHeaderView */,
@@ -147,6 +156,8 @@
 		7EF4AAC91C7B135F00AF4F6C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				7E254AB21C870F7400FFEFE0 /* Localizable.strings */,
+				7E254AAD1C870F7300FFEFE0 /* InfoPlist.strings */,
 				7EF4AACC1C7B140300AF4F6C /* Assets.xcassets */,
 				7EF4AACA1C7B139000AF4F6C /* allStations.json */,
 				7ED173D31C6A1E260057A5D9 /* Info.plist */,
@@ -196,6 +207,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				Base,
+				ru,
 			);
 			mainGroup = 7ED173BB1C6A1E260057A5D9;
 			productRefGroup = 7ED173C51C6A1E260057A5D9 /* Products */;
@@ -213,11 +225,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E254AA81C870DD700FFEFE0 /* en.xliff in Resources */,
+				7E254AAB1C870F7300FFEFE0 /* InfoPlist.strings in Resources */,
 				7E254A9B1C870C5A00FFEFE0 /* TableHeaderView.xib in Resources */,
 				7EF4AACB1C7B139000AF4F6C /* allStations.json in Resources */,
+				7E254AB01C870F7400FFEFE0 /* Localizable.strings in Resources */,
 				7EF4AACD1C7B140300AF4F6C /* Assets.xcassets in Resources */,
 				7E254AA11C870C6400FFEFE0 /* Main.storyboard in Resources */,
 				7E254AA01C870C6400FFEFE0 /* LaunchScreen.storyboard in Resources */,
+				7E254AB81C87102D00FFEFE0 /* ru.xliff in Resources */,
 				7E254A991C8705BB00FFEFE0 /* Podfile in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -231,7 +246,7 @@
 			files = (
 				7E254A891C86EA1900FFEFE0 /* TableHeaderView.swift in Sources */,
 				7EF4AAD31C7B158C00AF4F6C /* AboutAppController.swift in Sources */,
-				7E254A8F1C86EA2C00FFEFE0 /* ScheduleModel.swift in Sources */,
+				7E254A8F1C86EA2C00FFEFE0 /* ScheduleTableModel.swift in Sources */,
 				7EF4AAD51C7B3BD300AF4F6C /* DatePickerCell.swift in Sources */,
 				7EF4AAD11C7B157D00AF4F6C /* ScheduleController.swift in Sources */,
 				7E254A761C81078F00FFEFE0 /* DirectionWaysCell.swift in Sources */,
@@ -250,7 +265,7 @@
 			children = (
 				7E254A9D1C870C6400FFEFE0 /* Base */,
 				7E254AA21C870CBD00FFEFE0 /* en */,
-				7E254AA41C870CC400FFEFE0 /* ru */,
+				7E254AB31C870FE200FFEFE0 /* ru */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -260,9 +275,27 @@
 			children = (
 				7E254A9F1C870C6400FFEFE0 /* Base */,
 				7E254AA31C870CBD00FFEFE0 /* en */,
-				7E254AA51C870CC400FFEFE0 /* ru */,
+				7E254AB41C870FE200FFEFE0 /* ru */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7E254AAD1C870F7300FFEFE0 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E254AAC1C870F7300FFEFE0 /* en */,
+				7E254AB61C870FE200FFEFE0 /* ru */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7E254AB21C870F7400FFEFE0 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E254AB11C870F7400FFEFE0 /* en */,
+				7E254AB51C870FE200FFEFE0 /* ru */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

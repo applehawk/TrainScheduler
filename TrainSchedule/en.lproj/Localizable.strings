@@ -1,0 +1,21 @@
+/* Arrival place label */
+"ARRIVAL_CITY_LABEL" = "Arrival";
+
+/* Title for date choosing section */
+"CHOOSE_DATE_CHOOSE_TITLE" = "Choose date";
+
+/* Title for choosing direction way */
+"CHOOSE_DIRECTION_WAY_TITLE" = "Choose direction";
+
+/* Title for variants section */
+"CHOOSE_VARIANTS_TITLE" = "Choose variants";
+
+/* Departure place label */
+"DATEPICKER_SECTION_ROW" = "Date";
+
+/* Departure place label */
+"DEPARTURE_CITY_LABEL" = "Departure";
+
+/* Departure place label */
+"VARIANTS_SECTION_ROW" = "Place";
+
