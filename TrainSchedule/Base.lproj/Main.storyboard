@@ -1,26 +1,167 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="OVS-34-1mX">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--AboutAppController-->
+        <scene sceneID="CJN-zQ-g99">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TrainSchedule" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="AboutAppController" id="Yth-iy-89C" customClass="AboutAppController" customModule="TrainSchedule" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="y7t-7h-EDa"/>
+                        <viewControllerLayoutGuide type="bottom" id="a6h-oh-iEi"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="NCJ-5C-sXc">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="О приложении" image="About-50" id="lWv-3a-Lo3"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VcS-IO-Xur" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="840" y="-778"/>
+        </scene>
+        <!--ScheduleController-->
+        <scene sceneID="ltD-hM-PyR">
+            <objects>
+                <viewController title="ScheduleController" id="jFU-Zk-JGa" customClass="ScheduleController" customModule="TrainSchedule" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="uzH-el-jPg"/>
+                        <viewControllerLayoutGuide type="bottom" id="nax-HQ-Qvp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3aH-mz-9hI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="94" sectionHeaderHeight="24" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="OIG-E0-mQy">
+                                <rect key="frame" x="0.0" y="20" width="600" height="531"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="scheduleCellId" rowHeight="84" id="IrB-v7-Nch" customClass="DirectionWaysCell" customModule="TrainSchedule" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="49.5" width="600" height="84"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IrB-v7-Nch" id="gwv-Bb-QYv">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="83.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Way" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Weq-BR-NkB">
+                                                    <rect key="frame" x="8" y="13" width="60" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QSq-UY-EDz">
+                                                    <rect key="frame" x="76" y="8" width="516" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="QSq-UY-EDz" secondAttribute="trailing" id="2IB-jt-wDR"/>
+                                                <constraint firstItem="Weq-BR-NkB" firstAttribute="leading" secondItem="gwv-Bb-QYv" secondAttribute="leading" constant="8" id="8nt-EM-jl1"/>
+                                                <constraint firstItem="Weq-BR-NkB" firstAttribute="centerY" secondItem="QSq-UY-EDz" secondAttribute="centerY" id="Gh0-X4-G2T"/>
+                                                <constraint firstItem="QSq-UY-EDz" firstAttribute="leading" secondItem="Weq-BR-NkB" secondAttribute="trailing" constant="8" id="LQ9-8b-SEr"/>
+                                                <constraint firstItem="QSq-UY-EDz" firstAttribute="top" secondItem="gwv-Bb-QYv" secondAttribute="top" constant="8" id="e3m-aC-tcz"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="wayLabel" destination="Weq-BR-NkB" id="TKt-7i-CBJ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="datePickerCellId" rowHeight="329" id="4pG-Dg-ooz" customClass="DatePickerCell" customModule="TrainSchedule" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="133.5" width="600" height="329"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="4pG-Dg-ooz" id="Q9Y-c8-Nxl">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="328.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aEh-vv-jbQ">
+                                                    <rect key="frame" x="8" y="8" width="60" height="20.5"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="60" id="B3d-xU-TE1"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="MSv-WW-Tyo">
+                                                    <rect key="frame" x="8" y="41" width="320" height="216"/>
+                                                    <date key="date" timeIntervalSinceReferenceDate="478220085.06266099">
+                                                        <!--2016-02-26 22:54:45 +0000-->
+                                                    </date>
+                                                </datePicker>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="aEh-vv-jbQ" firstAttribute="top" secondItem="Q9Y-c8-Nxl" secondAttribute="topMargin" id="5Db-hN-Ah5"/>
+                                                <constraint firstItem="aEh-vv-jbQ" firstAttribute="leading" secondItem="Q9Y-c8-Nxl" secondAttribute="leadingMargin" id="6fS-g2-Fo6"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="aEh-vv-jbQ" secondAttribute="trailing" id="AcN-ry-7Va"/>
+                                                <constraint firstItem="MSv-WW-Tyo" firstAttribute="top" secondItem="aEh-vv-jbQ" secondAttribute="bottom" constant="8" id="VP8-RX-yqM"/>
+                                                <constraint firstItem="MSv-WW-Tyo" firstAttribute="centerX" secondItem="Q9Y-c8-Nxl" secondAttribute="centerX" id="s8M-40-6WN"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dateLabel" destination="aEh-vv-jbQ" id="oXJ-wG-WAZ"/>
+                                            <outlet property="datePicker" destination="MSv-WW-Tyo" id="QBU-Uq-Cf2"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="variantsCellId" id="deV-OG-bTu">
+                                        <rect key="frame" x="0.0" y="462.5" width="600" height="94"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="deV-OG-bTu" id="fZy-PG-dop">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="93.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="jFU-Zk-JGa" id="RJv-p2-Xgo"/>
+                                    <outlet property="delegate" destination="jFU-Zk-JGa" id="1lU-le-UxC"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OIG-E0-mQy" firstAttribute="leading" secondItem="3aH-mz-9hI" secondAttribute="leading" id="Qpr-iH-f8q"/>
+                            <constraint firstAttribute="trailing" secondItem="OIG-E0-mQy" secondAttribute="trailing" id="XOr-Qn-9XT"/>
+                            <constraint firstItem="nax-HQ-Qvp" firstAttribute="top" secondItem="OIG-E0-mQy" secondAttribute="bottom" id="h7k-J2-rVB"/>
+                            <constraint firstItem="OIG-E0-mQy" firstAttribute="top" secondItem="uzH-el-jPg" secondAttribute="bottom" id="udd-u2-d2J"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Расписание" image="Train-50" id="fWz-Mw-5bP"/>
+                    <connections>
+                        <outlet property="tableView" destination="OIG-E0-mQy" id="Lcx-KN-aSu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sz0-bK-xKy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="822" y="-1557"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="A46-LU-cyF">
+            <objects>
+                <tabBarController id="OVS-34-1mX" customClass="MainViewController" customModule="TrainSchedule" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="2gf-Yo-lwN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="jFU-Zk-JGa" kind="relationship" relationship="viewControllers" id="drQ-kC-tBV"/>
+                        <segue destination="Yth-iy-89C" kind="relationship" relationship="viewControllers" id="aZa-Cf-xB5"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ev6-XQ-qMR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-8" y="-1098"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="About-50" width="25" height="25"/>
+        <image name="Train-50" width="25" height="25"/>
+    </resources>
 </document>
